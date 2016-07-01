@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory">
+        <implementation class="com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory"/>
+        <service servicefactory="false">
+            <provide interface="org.apache.sling.api.adapter.AdapterFactory"/>
+        </service>
+        <property name="adaptables" value="org.apache.sling.api.SlingHttpServletRequest"/>
+        <property name="adapters" value="org.apache.sling.api.resource.Resource"/>
+        <property name="service.pid" value="com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory"/>
+    </scr:component>
+</components>

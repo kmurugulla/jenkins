@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.adobe.acs.samples.mbean.impl.SampleMBeanImpl">
+        <implementation class="com.adobe.acs.samples.mbean.impl.SampleMBeanImpl"/>
+        <service servicefactory="false">
+            <provide interface="javax.management.DynamicMBean"/>
+        </service>
+        <property name="jmx.objectname" value="com.adobe.acs.samples.mbean:type=SampleMBean"/>
+        <property name="service.pid" value="com.adobe.acs.samples.mbean.impl.SampleMBeanImpl"/>
+    </scr:component>
+</components>

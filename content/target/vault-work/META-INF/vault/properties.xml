@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>ACS AEM Samples Content Package</comment>
+<entry key="createdBy">murugull</entry>
+<entry key="name">acs-aem-samples-content</entry>
+<entry key="created">2015-05-17T20:27:54.218-0400</entry>
+<entry key="groupId">com.adobe.acs</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">adobe/consulting</entry>
+<entry key="description">Maven Multimodule project for ACS AEM Samples.</entry>
+<entry key="artifactId">acs-aem-samples-content</entry>
+<entry key="path">/etc/packages/adobe/consulting/acs-aem-samples-content.zip</entry>
+</properties>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.adobe.acs.samples.events.impl.SampleSlingEventHandler">
+        <implementation class="com.adobe.acs.samples.events.impl.SampleSlingEventHandler"/>
+        <service servicefactory="false">
+            <provide interface="org.osgi.service.event.EventHandler"/>
+            <provide interface="org.apache.sling.discovery.TopologyEventListener"/>
+        </service>
+        <property name="event.topics">
+            samples/events/poked
+            samples/events/*
+        </property>
+        <property name="event.filter" value="(&amp;(type=DEACTIVATE))"/>
+        <property name="service.pid" value="com.adobe.acs.samples.events.impl.SampleSlingEventHandler"/>
+        <reference name="jobManager" interface="org.apache.sling.event.jobs.JobManager" cardinality="1..1" policy="static" bind="bindJobManager" unbind="unbindJobManager"/>
+    </scr:component>
+</components>

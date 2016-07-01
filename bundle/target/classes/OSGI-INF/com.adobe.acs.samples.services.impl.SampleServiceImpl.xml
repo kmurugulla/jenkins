@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component name="com.adobe.acs.samples.services.impl.SampleServiceImpl" activate="activate" deactivate="deactivate">
+        <implementation class="com.adobe.acs.samples.services.impl.SampleServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.adobe.acs.samples.services.SampleService"/>
+        </service>
+        <property name="service-name" value="my-sample"/>
+        <property name="world" value="earth"/>
+        <property name="service.pid" value="com.adobe.acs.samples.services.impl.SampleServiceImpl"/>
+        <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" cardinality="1..1" policy="static" bind="bindResourceResolverFactory" unbind="unbindResourceResolverFactory"/>
+    </scr:component>
+</components>

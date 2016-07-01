@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.adobe.acs.samples.events.impl.SampleJcrEventListener" activate="activate" deactivate="deactivate">
+        <implementation class="com.adobe.acs.samples.events.impl.SampleJcrEventListener"/>
+        <service servicefactory="false">
+            <provide interface="javax.jcr.observation.EventListener"/>
+        </service>
+        <property name="service.pid" value="com.adobe.acs.samples.events.impl.SampleJcrEventListener"/>
+        <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+        <reference name="eventAdmin" interface="org.osgi.service.event.EventAdmin" cardinality="1..1" policy="static" bind="bindEventAdmin" unbind="unbindEventAdmin"/>
+    </scr:component>
+</components>

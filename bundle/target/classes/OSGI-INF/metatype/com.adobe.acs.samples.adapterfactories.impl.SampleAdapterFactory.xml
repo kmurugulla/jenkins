@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory">
+    <OCD id="com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory" name="%com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory.name" description="%com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory.description"/>
+    <Designate pid="com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory">
+        <Object ocdref="com.adobe.acs.samples.adapterfactories.impl.SampleAdapterFactory"/>
+    </Designate>
+</metatype:MetaData>
