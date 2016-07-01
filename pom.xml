@@ -190,7 +190,7 @@
         It would be best if you proxied the Adobe repository using a Maven
         Repository Manager. Once you do that, remove these sections.
      -->
-    <repositories>
+    <!-- <repositories>
         <repository>
             <id>adobe</id>
             <name>Adobe Public Repository</name>
@@ -205,7 +205,24 @@
             <url>https://repo.adobe.com/nexus/content/groups/public/</url>
             <layout>default</layout>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories> -->
+
+     <repositories>
+        <repository>
+            <id>adobe</id>
+            <name>Adobe Public Repository</name>
+            <url>http://localhost:10002/nexus/content/repositories/adobe/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>adobe</id>
+            <name>Adobe Public Repository</name>
+            <url>http://localhost:10002/nexus/content/repositories/adobe/</url>
+            <layout>default</layout>
+        </pluginRepository>
+    </pluginRepositories> 
 
     <build>
         <pluginManagement>
