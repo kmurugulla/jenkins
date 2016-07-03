@@ -223,18 +223,18 @@
             <layout>default</layout>
         </pluginRepository>
     </pluginRepositories> 
-    <!-- <distributionManagement>
+    <distributionManagement>
             <repository>
-                <id>deployment</id>
-                <name>Internal Releases</name>
+                <id>releases</id>
+                <name>Releases</name>
                 <url>http://192.168.99.100:10002/nexus/content/repositories/releases/</url>
             </repository>
             <snapshotRepository>
-                <id>deployment</id>
-                <name>Internal Snapshot Releases</name>
+                <id>snapshots</id>
+                <name>Snapshots</name>
                 <url>http://192.168.99.100:10002/nexus/content/repositories/snapshots/</url>
             </snapshotRepository>
-    </distributionManagement> -->
+    </distributionManagement>
     <build>
         <pluginManagement>
             <plugins>
