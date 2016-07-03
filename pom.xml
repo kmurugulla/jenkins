@@ -211,7 +211,7 @@
         <repository>
             <id>adobe</id>
             <name>Adobe Public Repository</name>
-            <url>http://localhost:10002/nexus/content/repositories/adobe/</url>
+            <url>http://192.168.99.100:10002/nexus/content/repositories/adobe/</url>
             <layout>default</layout>
         </repository>
     </repositories>
@@ -219,7 +219,7 @@
         <pluginRepository>
             <id>adobe</id>
             <name>Adobe Public Repository</name>
-            <url>http://localhost:10002/nexus/content/repositories/adobe/</url>
+            <url>http://192.168.99.100:10002/nexus/content/repositories/adobe/</url>
             <layout>default</layout>
         </pluginRepository>
     </pluginRepositories> 
