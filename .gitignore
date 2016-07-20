@@ -6,4 +6,8 @@ content/target
 .idea
 .lazybones
 bundle/target
+<<<<<<< HEAD
 *.iml
+=======
+*.iml
+>>>>>>> release/1.0.4
