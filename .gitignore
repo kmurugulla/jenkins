@@ -1,0 +1,9 @@
+syntax: glob
+
+*~
+.DS_Store
+content/target
+.idea
+.lazybones
+bundle/target
+*.iml
